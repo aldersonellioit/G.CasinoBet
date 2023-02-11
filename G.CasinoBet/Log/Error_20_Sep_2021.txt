@@ -1,0 +1,41 @@
+---------------------------------------------------------------------------------------------
+9/20/2021 3:24:46 PM
+GameData
+No connection is available to service this operation: SMEMBERS Set_; SocketFailure on odds-cric-high-redis-001.2bnome.0001.euw1.cache.amazonaws.com:6379/Subscription, origin: Error, input-buffer: 0, outstanding: 0, last-read: 0s ago, last-write: 0s ago, unanswered-write: -133260s ago, keep-alive: 60s, pending: 0, state: Connecting, last-heartbeat: never, last-mbeat: -1s ago, global: 0s ago, mgr: Inactive, err: never; IOCP: (Busy=0,Free=1000,Min=4,Max=1000), WORKER: (Busy=1,Free=8190,Min=4,Max=8191), Local-CPU: n/a
+ : Req{"gmid":79216743,"m":0}
+---------------------------------------------------------------------------------------------
+9/20/2021 3:31:44 PM
+GameData
+Object reference not set to an instance of an object.
+ : Req{"gmid":79216743,"m":0}
+---------------------------------------------------------------------------------------------
+9/20/2021 3:36:39 PM
+GameData
+Value cannot be null.
+Parameter name: source
+ : Req{"gmid":79216743,"m":0}
+---------------------------------------------------------------------------------------------
+9/20/2021 3:44:42 PM
+GameData
+Error converting value 1.1791573 to type 'Models.DimFront.GameDataw'. Path '', line 1, position 11.
+ : Req{"gmid":79216743,"m":0}
+---------------------------------------------------------------------------------------------
+9/20/2021 3:55:01 PM
+GameData
+Error converting value 1.1791573 to type 'Models.DimFront.GameDataw'. Path '', line 1, position 11.
+ : Req{"gmid":79216743,"m":0}
+---------------------------------------------------------------------------------------------
+9/20/2021 3:57:25 PM
+GameData
+Error converting value 1.1791573 to type 'Models.DimFront.GameDataw'. Path '', line 1, position 11.
+ : Req{"gmid":79216743,"m":0}
+---------------------------------------------------------------------------------------------
+9/20/2021 3:59:29 PM
+GameData
+Error converting value 1.1791573 to type 'Models.DimFront.GameDataw'. Path '', line 1, position 11.
+ : Req{"gmid":79216743,"m":0}
+---------------------------------------------------------------------------------------------
+9/20/2021 4:00:29 PM
+GameData
+Error converting value 1.1791573 to type 'Models.DimFront.GameDataw'. Path '', line 1, position 11.
+ : Req{"gmid":79216743,"m":0}

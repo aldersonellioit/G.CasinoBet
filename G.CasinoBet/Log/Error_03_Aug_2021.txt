@@ -1,0 +1,28 @@
+---------------------------------------------------------------------------------------------
+8/3/2021 11:01:10 AM
+KbcUserBook : Newtonsoft.Json.JsonReaderException: Error reading string. Unexpected token: StartArray. Path '', line 1, position 1.
+   at Newtonsoft.Json.JsonReader.ReadAsStringInternal()
+   at Newtonsoft.Json.JsonTextReader.ReadAsString()
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ReadForType(JsonReader reader, JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at DimFront.Controllers.FrontController.<>c.<KbcUserBook>b__109_0(DataRow x) in C:\Projects\git\worldfrontmvc\DimFront\Controllers\FrontController.cs:line 10286
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at DimFront.Controllers.FrontController.KbcUserBook(CasinoUserBook casinoUserBook) in C:\Projects\git\worldfrontmvc\DimFront\Controllers\FrontController.cs:line 10285
+ : Req{"uid":22,"mid":7409475019856,"gtype":"kbc"}
+---------------------------------------------------------------------------------------------
+8/3/2021 11:10:19 AM
+KbcUserBook : Newtonsoft.Json.JsonReaderException: Error reading JObject from JsonReader. Current JsonReader item is not an object: StartArray. Path '', line 1, position 1.
+   at Newtonsoft.Json.Linq.JObject.Load(JsonReader reader)
+   at Newtonsoft.Json.Linq.JObject.Parse(String json)
+   at DimFront.Controllers.FrontController.<>c.<KbcUserBook>b__109_0(DataRow x) in C:\Projects\git\worldfrontmvc\DimFront\Controllers\FrontController.cs:line 10286
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at DimFront.Controllers.FrontController.KbcUserBook(CasinoUserBook casinoUserBook) in C:\Projects\git\worldfrontmvc\DimFront\Controllers\FrontController.cs:line 10285
+ : Req{"uid":22,"mid":7409475019856,"gtype":"kbc"}

@@ -1,0 +1,70 @@
+---------------------------------------------------------------------------------------------
+7/31/2021 12:01:02 PM
+Login : System.Security.Cryptography.CryptographicException: The specified key is not a valid size for this algorithm.
+   at System.Security.Cryptography.AesCryptoServiceProvider.set_Key(Byte[] value)
+   at DimFront.Providers.ED.EncryptString(String key, String plainText) in C:\Projects\git\worldfrontmvc\DimFront\Providers\ED.cs:line 20
+   at DimFront.Controllers.FrontController.<Login>d__19.MoveNext() in C:\Projects\git\worldfrontmvc\DimFront\Controllers\FrontController.cs:line 426
+ : Req{"uname":"Happy50","pass":"Happy501234","webdom":"world777.com","ip":"1.1.1.1","vpn":false,"host":true,"bdetail":"crome"}
+---------------------------------------------------------------------------------------------
+7/31/2021 12:42:24 PM
+Casinolist
+Invalid length for a Base-64 char array or string.
+ : Reqnull
+---------------------------------------------------------------------------------------------
+7/31/2021 12:44:20 PM
+Casinolist
+Invalid length for a Base-64 char array or string.
+ : Reqnull
+---------------------------------------------------------------------------------------------
+7/31/2021 12:59:06 PM
+Casinolist
+Invalid length for a Base-64 char array or string.
+ : Reqnull
+---------------------------------------------------------------------------------------------
+7/31/2021 1:01:29 PM
+Casinolist
+Invalid length for a Base-64 char array or string.
+ : Reqnull
+---------------------------------------------------------------------------------------------
+7/31/2021 1:01:31 PM
+Casinolist
+Invalid length for a Base-64 char array or string.
+ : Reqnull
+---------------------------------------------------------------------------------------------
+7/31/2021 1:04:33 PM
+Casinolist
+Invalid length for a Base-64 char array or string.
+ : Reqnull
+---------------------------------------------------------------------------------------------
+7/31/2021 1:25:47 PM
+Login : System.Security.Cryptography.CryptographicException: The specified key is not a valid size for this algorithm.
+   at System.Security.Cryptography.AesCryptoServiceProvider.set_Key(Byte[] value)
+   at DimFront.Providers.ED.EncryptString(String key, String plainText) in C:\Projects\git\worldfrontmvc\DimFront\Providers\ED.cs:line 20
+   at DimFront.Controllers.FrontController.<Login>d__19.MoveNext() in C:\Projects\git\worldfrontmvc\DimFront\Controllers\FrontController.cs:line 426
+ : Req{"uname":"Happy50","pass":"Happy501234","webdom":"world777.com","ip":"1.1.1.1","vpn":false,"host":true,"bdetail":"crome"}
+---------------------------------------------------------------------------------------------
+7/31/2021 1:31:09 PM
+Login : System.Security.Cryptography.CryptographicException: The specified key is not a valid size for this algorithm.
+   at System.Security.Cryptography.AesCryptoServiceProvider.set_Key(Byte[] value)
+   at DimFront.Providers.ED.EncryptString(String key, String plainText) in C:\Projects\git\worldfrontmvc\DimFront\Providers\ED.cs:line 20
+   at DimFront.Controllers.FrontController.<Login>d__19.MoveNext() in C:\Projects\git\worldfrontmvc\DimFront\Controllers\FrontController.cs:line 426
+ : Req{"uname":"Happy50","pass":"Happy501234","webdom":"world777.com","ip":"1.1.1.1","vpn":false,"host":true,"bdetail":"crome"}
+---------------------------------------------------------------------------------------------
+7/31/2021 1:39:44 PM
+Login : System.Security.Cryptography.CryptographicException: The specified key is not a valid size for this algorithm.
+   at System.Security.Cryptography.AesCryptoServiceProvider.set_Key(Byte[] value)
+   at DimFront.Providers.ED.EncryptString(String key, String plainText) in C:\Projects\git\worldfrontmvc\DimFront\Providers\ED.cs:line 20
+   at DimFront.Controllers.FrontController.<Login>d__19.MoveNext() in C:\Projects\git\worldfrontmvc\DimFront\Controllers\FrontController.cs:line 426
+ : Req{"uname":"Happy50","pass":"Happy501234","webdom":"world777.com","ip":"1.1.1.1","vpn":false,"host":true,"bdetail":"crome"}
+---------------------------------------------------------------------------------------------
+7/31/2021 1:43:47 PM
+Login : System.Security.Cryptography.CryptographicException: The specified key is not a valid size for this algorithm.
+   at System.Security.Cryptography.AesCryptoServiceProvider.set_Key(Byte[] value)
+   at DimFront.Providers.ED.EncryptString(String key, String plainText) in C:\Projects\git\worldfrontmvc\DimFront\Providers\ED.cs:line 20
+   at DimFront.Controllers.FrontController.<Login>d__19.MoveNext() in C:\Projects\git\worldfrontmvc\DimFront\Controllers\FrontController.cs:line 426
+ : Req{"uname":"Happy50","pass":"Happy501234","webdom":"world777.com","ip":"1.1.1.1","vpn":false,"host":true,"bdetail":"crome"}
+---------------------------------------------------------------------------------------------
+7/31/2021 3:00:37 PM
+Casinolist
+Object reference not set to an instance of an object.
+ : Reqnull

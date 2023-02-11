@@ -1,0 +1,25 @@
+---------------------------------------------------------------------------------------------
+08-05-2020 11:55:00
+InsertUser
+{"uguid":"040b0cb9-f586-4c6d-9b3a-0f6db43a70b4","uname":"test4","fname":"fname","pass":"passpass","ct":"city","mno":"1234","cid":0,"ptype":"1,2","ppart":0,"webdom":"webdom","webref":"newdim","elimit":0.0,"newlvlno":0,"mpass":"superadmin","ip":"1.2.3.4","bdet":"firefox","spart":5.0,"spart1":2.2,"comm":2.2,"point":10.1}
+Conversion failed when converting the varchar value ',1,2,' to data type int.
+---------------------------------------------------------------------------------------------
+08-05-2020 11:55:48
+InsertUser
+{"uguid":"040b0cb9-f586-4c6d-9b3a-0f6db43a70b4","uname":"test4","fname":"fname","pass":"passpass","ct":"city","mno":"1234","cid":0,"ptype":"1,2","ppart":0,"webdom":"webdom","webref":"newdim","elimit":0.0,"newlvlno":0,"mpass":"superadmin","ip":"1.2.3.4","bdet":"firefox","spart":5.0,"spart1":2.2,"comm":2.2,"point":10.1}
+Conversion failed when converting the varchar value ',1,2,' to data type int.
+---------------------------------------------------------------------------------------------
+08-05-2020 12:00:53
+InsertUser
+{"uguid":"040b0cb9-f586-4c6d-9b3a-0f6db43a70b4","uname":"test4","fname":"fname","pass":"passpass","ct":"city","mno":"1234","cid":0,"ptype":"1,2","ppart":0,"webdom":"webdom","webref":"newdim","elimit":0.0,"newlvlno":0,"mpass":"superadmin","ip":"1.2.3.4","bdet":"firefox","spart":5.0,"spart1":2.2,"comm":2.2,"point":10.1}
+Conversion failed when converting the varchar value ',1,2,' to data type int.
+---------------------------------------------------------------------------------------------
+08-05-2020 12:02:45
+InsertUser
+{"uguid":"040b0cb9-f586-4c6d-9b3a-0f6db43a70b4","uname":"test4","fname":"fname","pass":"passpass","ct":"city","mno":"1234","cid":0,"ptype":"1","ppart":0,"webdom":"webdom","webref":"newdim","elimit":0.0,"newlvlno":0,"mpass":"superadmin","ip":"1.2.3.4","bdet":"firefox","spart":5.0,"spart1":2.2,"comm":2.2,"point":10.1}
+Conversion failed when converting the varchar value ',1,' to data type int.
+---------------------------------------------------------------------------------------------
+08-05-2020 12:07:33
+InsertUser
+{"uguid":"040b0cb9-f586-4c6d-9b3a-0f6db43a70b4","uname":"test4","fname":"fname","pass":"passpass","ct":"city","mno":"1234","cid":0,"ptype":"1","ppart":0,"webdom":"webdom","webref":"newdim","elimit":0.0,"newlvlno":0,"mpass":"superadmin","ip":"1.2.3.4","bdet":"firefox","spart":5.0,"spart1":2.2,"comm":2.2,"point":10.1}
+Conversion failed when converting the varchar value ',1,' to data type int.

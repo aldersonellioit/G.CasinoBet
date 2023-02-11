@@ -1,0 +1,20 @@
+---------------------------------------------------------------------------------------------
+26-03-2021 12:28:09
+Login : StackExchange.Redis.RedisConnectionException: No connection is available to service this operation: SETEX dim.user.accesstoken-ee80d685-837b-4379-a517-8e6f6d442fda; UnableToConnect on newdim.qkevij.0001.euw2.cache.amazonaws.com:6379/Interactive, origin: ResetNonConnected, input-buffer: 0, outstanding: 0, last-read: 5s ago, last-write: 5s ago, unanswered-write: 931633s ago, keep-alive: 60s, pending: 0, state: Connecting, last-heartbeat: never, last-mbeat: -1s ago, global: 5s ago, mgr: Inactive, err: never; IOCP: (Busy=0,Free=1000,Min=4,Max=1000), WORKER: (Busy=1,Free=8190,Min=4,Max=8191), Local-CPU: n/a ---> StackExchange.Redis.RedisConnectionException: UnableToConnect on newdim.qkevij.0001.euw2.cache.amazonaws.com:6379/Interactive, origin: ResetNonConnected, input-buffer: 0, outstanding: 0, last-read: 5s ago, last-write: 5s ago, unanswered-write: 931633s ago, keep-alive: 60s, pending: 0, state: Connecting, last-heartbeat: never, last-mbeat: -1s ago, global: 5s ago, mgr: Inactive, err: never
+   --- End of inner exception stack trace ---
+   at StackExchange.Redis.ConnectionMultiplexer.ExecuteSyncImpl[T](Message message, ResultProcessor`1 processor, ServerEndPoint server)
+   at StackExchange.Redis.RedisBase.ExecuteSync[T](Message message, ResultProcessor`1 processor, ServerEndPoint server)
+   at StackExchange.Redis.RedisDatabase.StringSet(RedisKey key, RedisValue value, Nullable`1 expiry, When when, CommandFlags flags)
+   at Services.RedisManager.RedisManager.SetInMin[T](String key, Int32 expireTime, T cacheItem, Int32 database) in C:\Projects\dimmvcservices\Library\Services\RedisManager\RedisManager.cs:line 27
+   at DimFront.Controllers.FrontController.Login(Login login) in C:\Projects\dimmvcservices\DimFront\Controllers\FrontController.cs:line 194
+ : Req{"uname":"Happy43","pass":"Hello321","webdom":"world777.com","ip":"1","vpn":false,"host":false,"bdetail":"chrome"}
+---------------------------------------------------------------------------------------------
+26-03-2021 12:30:23
+Login : StackExchange.Redis.RedisConnectionException: No connection is available to service this operation: SETEX dim.user.accesstoken-ee80d685-837b-4379-a517-8e6f6d442fda; It was not possible to connect to the redis server(s); ConnectTimeout; IOCP: (Busy=0,Free=1000,Min=4,Max=1000), WORKER: (Busy=1,Free=8190,Min=4,Max=8191), Local-CPU: n/a ---> StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s); ConnectTimeout
+   --- End of inner exception stack trace ---
+   at StackExchange.Redis.ConnectionMultiplexer.ExecuteSyncImpl[T](Message message, ResultProcessor`1 processor, ServerEndPoint server)
+   at StackExchange.Redis.RedisBase.ExecuteSync[T](Message message, ResultProcessor`1 processor, ServerEndPoint server)
+   at StackExchange.Redis.RedisDatabase.StringSet(RedisKey key, RedisValue value, Nullable`1 expiry, When when, CommandFlags flags)
+   at Services.RedisManager.RedisManager.SetInMin[T](String key, Int32 expireTime, T cacheItem, Int32 database) in C:\Projects\dimmvcservices\Library\Services\RedisManager\RedisManager.cs:line 27
+   at DimFront.Controllers.FrontController.Login(Login login) in C:\Projects\dimmvcservices\DimFront\Controllers\FrontController.cs:line 194
+ : Req{"uname":"Happy43","pass":"Hello321","webdom":"world777.com","ip":"1","vpn":false,"host":false,"bdetail":"chrome"}

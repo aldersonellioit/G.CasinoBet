@@ -1,0 +1,5 @@
+---------------------------------------------------------------------------------------------
+4/22/2022 3:59:16 PM
+Createwallet+subid
+Input string '500.00' is not a valid integer. Path 'Data.Amount', line 1, position 24.
+ : Req{"aid":3117116,"uid":317234,"amt":50000.0,"copid":"67c3a326-10fd-4549-886e-5dd43ef36e93"}

@@ -1,0 +1,14 @@
+---------------------------------------------------------------------------------------------
+4/17/2021 3:05:36 PM
+LoginR : System.ArgumentException: Column 'username' does not belong to table Table.
+   at System.Data.DataRow.GetDataColumn(String columnName)
+   at System.Data.DataRow.get_Item(String columnName)
+   at DimFront.Controllers.FrontController.LoginR(QTLogin qt) in C:\Projects\mvc\dimmvcservicesMulti\DimFront\Controllers\FrontController.cs:line 6662
+ : Req{"uid":0,"guid":"005c9467-bbe7-4c42-b9bb-ec49cc0cf65c","gamename":"sports-runner","device":"desktop","rurl":"www.google.com"}
+---------------------------------------------------------------------------------------------
+4/17/2021 3:17:35 PM
+LoginR : System.ArgumentException: Column 'username' does not belong to table Table.
+   at System.Data.DataRow.GetDataColumn(String columnName)
+   at System.Data.DataRow.get_Item(String columnName)
+   at DimFront.Controllers.FrontController.LoginR(QTLogin qt) in C:\Projects\mvc\dimmvcservicesMulti\DimFront\Controllers\FrontController.cs:line 6662
+ : Req{"uid":0,"guid":"005c9467-bbe7-4c42-b9bb-ec49cc0cf65c","gamename":"sports-runner","device":"desktop","rurl":"www.google.com"}

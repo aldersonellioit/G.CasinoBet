@@ -1,0 +1,42 @@
+---------------------------------------------------------------------------------------------
+4/19/2022 3:10:21 PM
+GetDepolisthistory
+There is no row at position 1.
+---------------------------------------------------------------------------------------------
+4/19/2022 3:12:55 PM
+GetDepolisthistory
+The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters. 
+---------------------------------------------------------------------------------------------
+4/19/2022 3:36:59 PM
+Couponlist
+The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters. 
+ : Req{"aid":3116792,"uid":317213,"amt":50000.0,"copcod":null}
+---------------------------------------------------------------------------------------------
+4/19/2022 4:23:55 PM
+Createwallet
+Column 'MSG' does not belong to table Table1.
+ : Req{"aid":3116792,"uid":317213,"amt":50000.0,"copid":"b82c4905-d6c0-4840-b600-43e28e44351e"}
+---------------------------------------------------------------------------------------------
+4/19/2022 4:26:57 PM
+Createwallet
+The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters. 
+ : Req{"aid":3116792,"uid":317213,"amt":50000.0,"copid":"b82c4905-d6c0-4840-b600-43e28e44351e"}
+---------------------------------------------------------------------------------------------
+4/19/2022 4:30:03 PM
+Createwallet
+The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters. 
+ : Req{"aid":3116792,"uid":317213,"amt":50000.0,"copid":"b82c4905-d6c0-4840-b600-43e28e44351e"}
+---------------------------------------------------------------------------------------------
+4/19/2022 4:41:38 PM
+Createwallet
+The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters. 
+ : Req{"aid":3116792,"uid":317213,"amt":50000.0,"copid":"b82c4905-d6c0-4840-b600-43e28e44351e"}
+---------------------------------------------------------------------------------------------
+4/19/2022 4:51:39 PM
+GetDepolisthistory
+The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters. 
+---------------------------------------------------------------------------------------------
+4/19/2022 5:44:44 PM
+Createwallet
+The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters. 
+ : Req{"aid":3116892,"uid":317220,"amt":50000.0,"copid":"b82c4905-d6c0-4840-b600-43e28e44351e"}

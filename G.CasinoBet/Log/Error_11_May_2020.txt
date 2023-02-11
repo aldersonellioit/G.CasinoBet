@@ -1,0 +1,50 @@
+---------------------------------------------------------------------------------------------
+11-05-2020 10:48:22
+Login : System.Data.SqlClient.SqlException (0x80131904): An insufficient number of arguments were supplied for the procedure or function dbo.fnConvertUserid.
+An insufficient number of arguments were supplied for the procedure or function dbo.fnConvertUserid.
+An insufficient number of arguments were supplied for the procedure or function dbo.fnConvertUserid.
+   at Services.Admin.AdminService.Login(Login login) in C:\Projects\git\dimmvcservices\Library\Services\Admin\AdminService.cs:line 54
+   at DimAdmin.Controllers.AdminController.Login(Login login) in C:\Projects\git\dimmvcservices\DimAdmin\Controllers\AdminController.cs:line 155
+ClientConnectionId:e091b592-0785-41ba-82a2-c04c4152165f
+Error Number:313,State:2,Class:16
+ : Req{"uid":"00000000-0000-0000-0000-000000000000","uu_id":"00000000-0000-0000-0000-000000000000","uname":"Admin2","pass":"Admin234","mpass":null,"webref":null,"ip":"1","bdetail":"crome"}
+---------------------------------------------------------------------------------------------
+11-05-2020 10:49:28
+Login : System.Data.SqlClient.SqlException (0x80131904): An insufficient number of arguments were supplied for the procedure or function dbo.fnConvertUserid.
+An insufficient number of arguments were supplied for the procedure or function dbo.fnConvertUserid.
+An insufficient number of arguments were supplied for the procedure or function dbo.fnConvertUserid.
+   at Services.Admin.AdminService.Login(Login login) in C:\Projects\git\dimmvcservices\Library\Services\Admin\AdminService.cs:line 54
+   at DimAdmin.Controllers.AdminController.Login(Login login) in C:\Projects\git\dimmvcservices\DimAdmin\Controllers\AdminController.cs:line 155
+ClientConnectionId:e091b592-0785-41ba-82a2-c04c4152165f
+Error Number:313,State:2,Class:16
+ : Req{"uid":"00000000-0000-0000-0000-000000000000","uu_id":"00000000-0000-0000-0000-000000000000","uname":"Admin2","pass":"Admin234","mpass":null,"webref":null,"ip":"1","bdetail":"crome"}
+---------------------------------------------------------------------------------------------
+11-05-2020 10:50:36
+Login : System.Data.SqlClient.SqlException (0x80131904): An insufficient number of arguments were supplied for the procedure or function dbo.fnConvertUserid.
+An insufficient number of arguments were supplied for the procedure or function dbo.fnConvertUserid.
+An insufficient number of arguments were supplied for the procedure or function dbo.fnConvertUserid.
+   at Services.Admin.AdminService.Login(Login login) in C:\Projects\git\dimmvcservices\Library\Services\Admin\AdminService.cs:line 54
+   at DimAdmin.Controllers.AdminController.Login(Login login) in C:\Projects\git\dimmvcservices\DimAdmin\Controllers\AdminController.cs:line 155
+ClientConnectionId:e091b592-0785-41ba-82a2-c04c4152165f
+Error Number:313,State:2,Class:16
+ : Req{"uid":"00000000-0000-0000-0000-000000000000","uu_id":"00000000-0000-0000-0000-000000000000","uname":"Admin2","pass":"Admin234","mpass":null,"webref":null,"ip":"1","bdetail":"crome"}
+---------------------------------------------------------------------------------------------
+11-05-2020 10:50:41
+Login : System.Data.SqlClient.SqlException (0x80131904): An insufficient number of arguments were supplied for the procedure or function dbo.fnConvertUserid.
+An insufficient number of arguments were supplied for the procedure or function dbo.fnConvertUserid.
+An insufficient number of arguments were supplied for the procedure or function dbo.fnConvertUserid.
+   at Services.Admin.AdminService.Login(Login login) in C:\Projects\git\dimmvcservices\Library\Services\Admin\AdminService.cs:line 54
+   at DimAdmin.Controllers.AdminController.Login(Login login) in C:\Projects\git\dimmvcservices\DimAdmin\Controllers\AdminController.cs:line 155
+ClientConnectionId:e091b592-0785-41ba-82a2-c04c4152165f
+Error Number:313,State:2,Class:16
+ : Req{"uid":"00000000-0000-0000-0000-000000000000","uu_id":"00000000-0000-0000-0000-000000000000","uname":"Admin2","pass":"Admin234","mpass":null,"webref":null,"ip":"1","bdetail":"crome"}
+---------------------------------------------------------------------------------------------
+11-05-2020 10:50:59
+Login : System.Data.SqlClient.SqlException (0x80131904): An insufficient number of arguments were supplied for the procedure or function dbo.fnConvertUserid.
+An insufficient number of arguments were supplied for the procedure or function dbo.fnConvertUserid.
+An insufficient number of arguments were supplied for the procedure or function dbo.fnConvertUserid.
+   at Services.Admin.AdminService.Login(Login login) in C:\Projects\git\dimmvcservices\Library\Services\Admin\AdminService.cs:line 54
+   at DimAdmin.Controllers.AdminController.Login(Login login) in C:\Projects\git\dimmvcservices\DimAdmin\Controllers\AdminController.cs:line 155
+ClientConnectionId:e091b592-0785-41ba-82a2-c04c4152165f
+Error Number:313,State:2,Class:16
+ : Req{"uid":"00000000-0000-0000-0000-000000000000","uu_id":"00000000-0000-0000-0000-000000000000","uname":"Admin2","pass":"Admin234","mpass":null,"webref":null,"ip":"1","bdetail":"crome"}

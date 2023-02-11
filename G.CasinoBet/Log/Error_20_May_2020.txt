@@ -1,0 +1,5 @@
+---------------------------------------------------------------------------------------------
+20-05-2020 12:59:01
+ChildUserList
+{"guid":"8f6c863f-856e-4b46-bcb9-118611606ac7","pno":1,"row":0}
+The number of rows provided for a FETCH clause must be greater then zero.

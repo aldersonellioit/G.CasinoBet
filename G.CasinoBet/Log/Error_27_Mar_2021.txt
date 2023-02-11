@@ -1,0 +1,85 @@
+---------------------------------------------------------------------------------------------
+27-03-2021 11:11:49
+Login : System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Services.RedisManage.RedisManager.SetInMin[T](String key, Int32 expireTime, T cacheItem, Int32 serverr) in C:\Projects\dimmvcservices\Library\Services\RedisManager\RedisManager.cs:line 112
+   at DimFront.Controllers.FrontController.Login(Login login) in C:\Projects\dimmvcservices\DimFront\Controllers\FrontController.cs:line 411
+ : Req{"uname":"Happy43","pass":"Hello321","webdom":"world777.com","ip":"1","vpn":false,"host":false,"bdetail":"chrome"}
+---------------------------------------------------------------------------------------------
+27-03-2021 11:17:45
+Login : StackExchange.Redis.RedisConnectionException: No connection is available to service this operation: SETEX dim.user.accesstoken-ee80d685-837b-4379-a517-8e6f6d442fda; UnableToConnect on newdim.qkevij.0001.euw2.cache.amazonaws.com:6379/Interactive, origin: ResetNonConnected, input-buffer: 0, outstanding: 0, last-read: 5s ago, last-write: 5s ago, unanswered-write: 1013844s ago, keep-alive: 60s, pending: 0, state: Connecting, last-heartbeat: never, last-mbeat: -1s ago, global: 5s ago, mgr: Inactive, err: never; IOCP: (Busy=0,Free=1000,Min=4,Max=1000), WORKER: (Busy=1,Free=8190,Min=4,Max=8191), Local-CPU: n/a ---> StackExchange.Redis.RedisConnectionException: UnableToConnect on newdim.qkevij.0001.euw2.cache.amazonaws.com:6379/Interactive, origin: ResetNonConnected, input-buffer: 0, outstanding: 0, last-read: 5s ago, last-write: 5s ago, unanswered-write: 1013844s ago, keep-alive: 60s, pending: 0, state: Connecting, last-heartbeat: never, last-mbeat: -1s ago, global: 5s ago, mgr: Inactive, err: never
+   --- End of inner exception stack trace ---
+   at StackExchange.Redis.ConnectionMultiplexer.ExecuteSyncImpl[T](Message message, ResultProcessor`1 processor, ServerEndPoint server)
+   at StackExchange.Redis.RedisBase.ExecuteSync[T](Message message, ResultProcessor`1 processor, ServerEndPoint server)
+   at StackExchange.Redis.RedisDatabase.StringSet(RedisKey key, RedisValue value, Nullable`1 expiry, When when, CommandFlags flags)
+   at Services.RedisManager.RedisManager.SetInMin[T](String key, Int32 expireTime, T cacheItem, Int32 database) in C:\Projects\dimmvcservices\Library\Services\RedisManager\RedisManager.cs:line 27
+   at DimFront.Controllers.FrontController.Login(Login login) in C:\Projects\dimmvcservices\DimFront\Controllers\FrontController.cs:line 411
+ : Req{"uname":"Happy43","pass":"Hello321","webdom":"world777.com","ip":"1","vpn":false,"host":false,"bdetail":"chrome"}
+---------------------------------------------------------------------------------------------
+27-03-2021 11:19:19
+Login : StackExchange.Redis.RedisConnectionException: No connection is available to service this operation: SETEX dim.user.accesstoken-ee80d685-837b-4379-a517-8e6f6d442fda; It was not possible to connect to the redis server(s); ConnectTimeout; IOCP: (Busy=0,Free=1000,Min=4,Max=1000), WORKER: (Busy=1,Free=8190,Min=4,Max=8191), Local-CPU: n/a ---> StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s); ConnectTimeout
+   --- End of inner exception stack trace ---
+   at StackExchange.Redis.ConnectionMultiplexer.ExecuteSyncImpl[T](Message message, ResultProcessor`1 processor, ServerEndPoint server)
+   at StackExchange.Redis.RedisBase.ExecuteSync[T](Message message, ResultProcessor`1 processor, ServerEndPoint server)
+   at StackExchange.Redis.RedisDatabase.StringSet(RedisKey key, RedisValue value, Nullable`1 expiry, When when, CommandFlags flags)
+   at Services.RedisManager.RedisManager.SetInMin[T](String key, Int32 expireTime, T cacheItem, Int32 database) in C:\Projects\dimmvcservices\Library\Services\RedisManager\RedisManager.cs:line 27
+   at DimFront.Controllers.FrontController.Login(Login login) in C:\Projects\dimmvcservices\DimFront\Controllers\FrontController.cs:line 411
+ : Req{"uname":"Happy43","pass":"Hello321","webdom":"world777.com","ip":"1","vpn":false,"host":false,"bdetail":"chrome"}
+---------------------------------------------------------------------------------------------
+27-03-2021 11:21:09
+Login : StackExchange.Redis.RedisConnectionException: No connection is available to service this operation: SETEX dim.user.accesstoken-ee80d685-837b-4379-a517-8e6f6d442fda; It was not possible to connect to the redis server(s); ConnectTimeout; IOCP: (Busy=4,Free=996,Min=4,Max=1000), WORKER: (Busy=5,Free=8186,Min=4,Max=8191), Local-CPU: n/a ---> StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s); ConnectTimeout
+   --- End of inner exception stack trace ---
+   at StackExchange.Redis.ConnectionMultiplexer.ExecuteSyncImpl[T](Message message, ResultProcessor`1 processor, ServerEndPoint server)
+   at StackExchange.Redis.RedisBase.ExecuteSync[T](Message message, ResultProcessor`1 processor, ServerEndPoint server)
+   at StackExchange.Redis.RedisDatabase.StringSet(RedisKey key, RedisValue value, Nullable`1 expiry, When when, CommandFlags flags)
+   at Services.RedisManager.RedisManager.SetInMin[T](String key, Int32 expireTime, T cacheItem, Int32 database)
+   at DimFront.Controllers.FrontController.Login(Login login) in C:\Projects\dimmvcservices\DimFront\Controllers\FrontController.cs:line 411
+ : Req{"uname":"Happy43","pass":"Hello321","webdom":"world777.com","ip":"1","vpn":false,"host":false,"bdetail":"chrome"}
+---------------------------------------------------------------------------------------------
+27-03-2021 04:45:33
+LoginPoptheball : System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'admin_3partycasi'.
+   at Services.DimFront.DimFrontService.Loginpoptheball(String guid, Int64 uid) in C:\Projects\dimmvcservices\Library\Services\DimFront\DimFrontService.cs:line 1487
+   at DimFront.Controllers.FrontController.Loginpoptheball() in C:\Projects\dimmvcservices\DimFront\Controllers\FrontController.cs:line 5443
+ClientConnectionId:7f1369ef-5576-45df-8566-4f6920687645
+Error Number:18456,State:1,Class:14
+ : Req
+---------------------------------------------------------------------------------------------
+27-03-2021 04:46:14
+LoginPoptheball : System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'admin_3partycasi'.
+   at Services.DimFront.DimFrontService.Loginpoptheball(String guid, Int64 uid) in C:\Projects\dimmvcservices\Library\Services\DimFront\DimFrontService.cs:line 1487
+   at DimFront.Controllers.FrontController.Loginpoptheball() in C:\Projects\dimmvcservices\DimFront\Controllers\FrontController.cs:line 5443
+ClientConnectionId:be424f6b-94b6-4e77-aea1-c22a101a57f8
+Error Number:18456,State:1,Class:14
+ : Req
+---------------------------------------------------------------------------------------------
+27-03-2021 04:51:01
+LoginPoptheball : System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'admin_3partycasi'.
+   at Services.DimFront.DimFrontService.Loginpoptheball(String guid, Int64 uid) in C:\Projects\dimmvcservices\Library\Services\DimFront\DimFrontService.cs:line 1487
+   at DimFront.Controllers.FrontController.Loginpoptheball() in C:\Projects\dimmvcservices\DimFront\Controllers\FrontController.cs:line 5443
+ClientConnectionId:855bd691-9efc-4429-83a9-1cea2d1b354b
+Error Number:18456,State:1,Class:14
+ : Req
+---------------------------------------------------------------------------------------------
+27-03-2021 05:38:35
+GetCasinoList : System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'admin_3partycasi'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at Data.SqlClientService.Execute(String spName, String connectionString, IList`1 sqlParameter) in C:\Projects\dimmvcservices\Library\Data\SqlClientService.cs:line 32
+   at Services.DimFront.DimFrontService.GetCasinoList(Casino cs) in C:\Projects\dimmvcservices\Library\Services\DimFront\DimFrontService.cs:line 493
+   at DimFront.Controllers.FrontController.GetCasinoList(Casino cs) in C:\Projects\dimmvcservices\DimFront\Controllers\FrontController.cs:line 1808
+ClientConnectionId:317928ba-bcc8-4262-bf5a-81167f8279db
+Error Number:18456,State:1,Class:14
+ : Req{"guid":"00000000-0000-0000-0000-000000000000","webdom":"world777.com","ctype":"1"}

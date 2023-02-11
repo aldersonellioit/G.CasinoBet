@@ -1,0 +1,8 @@
+---------------------------------------------------------------------------------------------
+12-05-2020 15:45:11
+OwnChangePass : System.Data.SqlClient.SqlException (0x80131904): Procedure or function 'InsertChangePwdLog' expects parameter '@ChangedBy', which was not supplied.
+   at Services.Admin.AdminService.OwnChangePass(ChangePass changepass)
+   at DimAdmin.Controllers.AdminController.OwnChangePass(ChangePass changepass) in C:\Projects\git\dimmvcservices\DimAdmin\Controllers\AdminController.cs:line 939
+ClientConnectionId:b91eda80-bbaf-4cbd-a791-c2fb2ea58e08
+Error Number:201,State:4,Class:16
+ : Req{"saguid":"ad4eda7f-54af-4c0d-880a-a08af2685c7a","guid":"00000000-0000-0000-0000-000000000000","pass":"Admin234","mpass":null,"ip":"1","bdetail":"chrome","uname":"xyz"}

@@ -1,0 +1,4 @@
+D:\git\G.CasinoBet\G.CasinoBet\obj\Debug\G.CasinoBet.csproj.AssemblyReference.cache
+D:\git\G.CasinoBet\G.CasinoBet\obj\Debug\G.CasinoBet.csproj.CoreCompileInputs.cache
+D:\git\G.CasinoBet\G.CasinoBet\obj\Debug\G.FrontMvc.dll
+D:\git\G.CasinoBet\G.CasinoBet\obj\Debug\G.FrontMvc.pdb

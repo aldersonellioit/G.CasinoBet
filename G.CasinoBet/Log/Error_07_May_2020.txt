@@ -1,0 +1,24 @@
+---------------------------------------------------------------------------------------------
+07-05-2020 14:53:49
+InsertUser
+{"uguid":"00000000-0000-0000-0000-000000000000","uname":"test","fname":"fname","pass":"pass","ct":"city","mno":null,"cid":0,"ptype":0,"ppart":0,"webdom":"webdom","webref":"newdim","elimit":0.0,"newlvlno":0,"mpass":"master","ip":"1.2.3.4","bdet":"firefox","spart":5.0,"spart1":10.0,"comm":15.0,"point":20.0}
+---------------------------------------------------------------------------------------------
+07-05-2020 16:37:59
+InsertUser
+{"uguid":"00000000-0000-0000-0000-000000000000","uname":"test","fname":"fname","pass":"pass","ct":"city","mno":"1234","cid":0,"ptype":0,"ppart":0,"webdom":"webdom","webref":"newdim","elimit":0.0,"newlvlno":0,"mpass":"master","ip":"1.2.3.4","bdet":"firefox","spart":5.0,"spart1":10.0,"comm":15.0,"point":20.0}
+---------------------------------------------------------------------------------------------
+07-05-2020 16:39:00
+InsertUser
+{"uguid":"00000000-0000-0000-0000-000000000000","uname":"","fname":"fname","pass":"pass","ct":"city","mno":"1234","cid":0,"ptype":0,"ppart":0,"webdom":"webdom","webref":"newdim","elimit":0.0,"newlvlno":0,"mpass":"master","ip":"1.2.3.4","bdet":"firefox","spart":5.0,"spart1":10.0,"comm":15.0,"point":20.0}
+---------------------------------------------------------------------------------------------
+07-05-2020 16:39:33
+InsertUser
+{"uguid":"00000000-0000-0000-0000-000000000000","uname":"","fname":"fname","pass":"pass","ct":"city","mno":"1234","cid":0,"ptype":0,"ppart":0,"webdom":"webdom","webref":"newdim","elimit":0.0,"newlvlno":0,"mpass":"master","ip":"1.2.3.4","bdet":"firefox","spart":5.0,"spart1":10.0,"comm":15.0,"point":20.0}
+---------------------------------------------------------------------------------------------
+07-05-2020 16:51:40
+InsertUser
+{"uguid":"00000000-0000-0000-0000-000000000000","uname":"test","fname":"fname","pass":"pass","ct":"city","mno":"1234","cid":0,"ptype":0,"ppart":0,"webdom":"webdom","webref":"newdim","elimit":0.0,"newlvlno":0,"mpass":"master","ip":"1.2.3.4","bdet":"firefox","spart":5.0,"spart1":10.0,"comm":15.0,"point":20.0}
+---------------------------------------------------------------------------------------------
+07-05-2020 19:13:27
+InsertUser
+{"uguid":"00000000-0000-0000-0000-000000000000","uname":"test","fname":"fname","pass":"pass","ct":"city","mno":"1234","cid":0,"ptype":0,"ppart":0,"webdom":"webdom","webref":"newdim","elimit":0.0,"newlvlno":0,"mpass":"master","ip":"1.2.3.4","bdet":"firefox","spart":5.0,"spart1":10.0,"comm":15.0,"point":20.0}
