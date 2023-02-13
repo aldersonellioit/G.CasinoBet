@@ -1,6 +1,11 @@
-﻿using System.Collections.Generic;
+﻿using Common;
+using Newtonsoft.Json;
+using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Globalization;
+using System.IO;
 using System.Linq;
 
 namespace Data
@@ -34,8 +39,9 @@ namespace Data
                         {
                             da.Fill(ds);
                         }
-                        catch (System.Exception)
+                        catch (System.Exception ex)
                         {
+                            WriteLogAll(ex.ToString()+"ds"+ "connectionString" + JsonConvert.SerializeObject(ds));
                         }
                         finally
                         {
@@ -50,100 +56,29 @@ namespace Data
                 }
             }
         }
-        public DataSet ExecuteTOut(string spName, string connectionString, IList<SqlParameter> sqlParameter)
+        public static void WriteLogAll(String str)
         {
-            using (var connaction = new SqlConnection(connectionString))
+            try
             {
-                using (var command = new SqlCommand())
+                if (ConfigItems.AllLog)
                 {
-                    command.Connection = connaction;
-                    command.CommandText = spName;
-                    command.CommandType = CommandType.StoredProcedure;
-                    command.CommandTimeout = 0;
-
-                    if (sqlParameter.Any())
+                    string path = System.Web.Hosting.HostingEnvironment.MapPath("~/Log/Error_" + DateTime.Now.ToString("dd_MMM_yyyy") + ".txt");
+                    if (!File.Exists(path))
                     {
-                        foreach (var item in sqlParameter)
-                        {
-                            command.Parameters.Add(item);
-                        }
+                        var myFile = File.Create(path);
+                        myFile.Close();
                     }
-                    using (var da = new SqlDataAdapter())
+                    using (StreamWriter sw = File.AppendText(path))
                     {
-                        da.SelectCommand = command;
-
-                        var ds = new DataSet();
-                        try
-                        {
-                            da.Fill(ds);
-                        }
-                        catch (System.Exception)
-                        {
-                        }
-                        finally
-                        {
-                            connaction.Close();
-                            connaction.Dispose();
-                            command.Dispose();
-                            da.Dispose();
-                        }
-
-                        return ds;
+                        sw.WriteLine("---------------------------------------------------------------------------------------------");
+                        //sw.Write(DateTime.Now);.ToString("yyyy-MM-dd HH:mm:ss.fff", CultureInfo.InvariantCulture);
+                        sw.Write(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff", CultureInfo.InvariantCulture));
+                        sw.WriteLine(Environment.NewLine + str );
                     }
                 }
             }
-        }
-        public void ExecuteAsync(string spName, string connectionString, IList<SqlParameter> sqlParameter)
-        {
-            using (var connaction = new SqlConnection(connectionString))
-            {
-                using (var command = new SqlCommand())
-                {
-                    command.Connection = connaction;
-                    command.CommandText = spName;
-                    command.CommandType = CommandType.StoredProcedure;
-                    command.CommandTimeout = 45;
-                    //connaction.ConnectionTimeout = 40000;
-                    if (sqlParameter.Any())
-                    {
-                        foreach (var item in sqlParameter)
-                        {
-                            command.Parameters.Add(item);
-                        }
-                    }
-                    connaction.Open();
-                    command.ExecuteNonQuery();
-                    connaction.Close();
-                    connaction.Dispose();
-                    command.Dispose();
-                }
-            }
-        }
-        public object ExecuteScaler(string spName, string connectionString, IList<SqlParameter> sqlParameter)
-        {
-            using (var connaction = new SqlConnection(connectionString))
-            {
-                using (var command = new SqlCommand())
-                {
-                    command.Connection = connaction;
-                    command.CommandText = spName;
-                    command.CommandType = CommandType.StoredProcedure;
-
-                    if (sqlParameter.Any())
-                    {
-                        foreach (var item in sqlParameter)
-                        {
-                            command.Parameters.Add(item);
-                        }
-                    }
-                    connaction.Open();
-                    var str = command.ExecuteScalar();
-                    connaction.Close();
-                    connaction.Dispose();
-                    command.Dispose();
-                    return str;
-                }
-            }
+            catch (Exception)
+            { }
         }
     }
 }
