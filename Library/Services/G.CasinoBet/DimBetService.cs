@@ -5365,13 +5365,6 @@ namespace Services.G.CasinoBet
 
         }
         #endregion
-        public string getuid(Int64 uid)
-        {
-            uid = uid % 10;
-            string uid1 = "";
-            uid1 = "_" + uid;
-            return uid1;
-        }
         public static string Postbonus(string uri, string data, string contentType, string method = "POST", String cid = "")
         {
             try
