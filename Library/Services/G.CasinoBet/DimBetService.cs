@@ -3872,6 +3872,7 @@ namespace Services.G.CasinoBet
                         parameters3.Add(new SqlParameter() { ParameterName = "fratemul", Value = ds.Tables[0].Rows[0]["balratemul"] });
                         parameters3.Add(new SqlParameter() { ParameterName = "Spart", Value = ds.Tables[0].Rows[0]["apart"] });
                         parameters3.Add(new SqlParameter() { ParameterName = "currname", Value = ds.Tables[0].Rows[0]["ccode"] });
+                        parameters3.Add(new SqlParameter() { ParameterName = "betjson", Value = placebetteen.bjson });
                         dscom = _sqlClientService.Execute("group2_otherkbc_placebetconform", ConfigItems.Conn_Casino, parameters3);
                         WriteLogAll("Placebetkbc2+group2_otherkbc_placebetconform", "Req:" + JsonConvert.SerializeObject(placebetteen) + "Res" + JsonConvert.SerializeObject(dscom));
                         if (dscom != null && dscom.Tables != null && dscom.Tables.Count > 0 && dscom.Tables[0].Rows.Count > 0 && dscom.Tables[0].Columns.Contains("id") && dscom.Tables[0].Rows[0]["id"].ToString() == "1")
