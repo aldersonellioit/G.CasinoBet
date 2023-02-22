@@ -3517,6 +3517,7 @@ namespace Services.G.CasinoBet
                     parameterscas.Add(new SqlParameter() { ParameterName = "ipaddress", Value = placebetteen.ip });
                     parameterscas.Add(new SqlParameter() { ParameterName = "browserdetail", Value = placebetteen.bdetail });
                     parameterscas.Add(new SqlParameter() { ParameterName = "Usertype", Value = ds.Tables[0].Rows[0]["PartnershipType"] });
+                    parameterscas.Add(new SqlParameter() { ParameterName = "bhav", Value = placebetteen.bhav });
                     dscasino = _sqlClientService.Execute("other1_placeExpoCheck", ConfigItems.Conn_Casinogroup, parameterscas);
                     WriteLogAll("Placebetpatti21+other1_placeExpoCheck", "Req:" + JsonConvert.SerializeObject(placebetteen) + "Res" + JsonConvert.SerializeObject(dscasino));
                     if (dscasino != null && dscasino.Tables != null && dscasino.Tables.Count > 0 && dscasino.Tables[0].Rows.Count > 0 && dscasino.Tables[0].Columns.Contains("id") && dscasino.Tables[0].Rows[0]["id"].ToString() == "1")
@@ -3539,6 +3540,7 @@ namespace Services.G.CasinoBet
                         parameters3.Add(new SqlParameter() { ParameterName = "fratemul", Value = ds.Tables[0].Rows[0]["balratemul"] });
                         parameters3.Add(new SqlParameter() { ParameterName = "Spart", Value = ds.Tables[0].Rows[0]["apart"] });
                         parameters3.Add(new SqlParameter() { ParameterName = "currname", Value = ds.Tables[0].Rows[0]["ccode"] });
+                        parameters3.Add(new SqlParameter() { ParameterName = "bhav", Value = placebetteen.bhav });
                         dscom = _sqlClientService.Execute("group2_other1_placebetconform", ConfigItems.Conn_Casino, parameters3);
                         WriteLogAll("Placebetpatti22+group2_other1_placebetconform", "Req:" + JsonConvert.SerializeObject(placebetteen) + "Res" + JsonConvert.SerializeObject(dscom));
                         if (dscom != null && dscom.Tables != null && dscom.Tables.Count > 0 && dscom.Tables[0].Rows.Count > 0 && dscom.Tables[0].Columns.Contains("id") && dscom.Tables[0].Rows[0]["id"].ToString() == "1")
