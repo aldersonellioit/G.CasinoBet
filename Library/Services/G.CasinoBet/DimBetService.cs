@@ -5453,7 +5453,7 @@ namespace Services.G.CasinoBet
                     }
                 }
             }
-            catch (UnauthorizedAccessException ex)
+            catch (UnauthorizedAccessException)
             {
                 return "{'status':'400','message':'Unauthorized Access'}";
             }

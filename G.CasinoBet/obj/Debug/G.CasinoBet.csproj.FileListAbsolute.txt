@@ -1,12 +1,7 @@
 D:\git\G.CasinoBet\G.CasinoBet\obj\Debug\G.CasinoBet.csproj.AssemblyReference.cache
 D:\git\G.CasinoBet\G.CasinoBet\obj\Debug\G.CasinoBet.csproj.CoreCompileInputs.cache
-D:\git\G.CasinoBet\G.CasinoBet\obj\Debug\G.FrontMvc.dll
-D:\git\G.CasinoBet\G.CasinoBet\obj\Debug\G.FrontMvc.pdb
 D:\git\G.CasinoBet\G.CasinoBet\bin\ApplicationInsights.config
 D:\git\G.CasinoBet\G.CasinoBet\bin\Log\Request\Log.txt
-D:\git\G.CasinoBet\G.CasinoBet\bin\G.FrontMvc.dll.config
-D:\git\G.CasinoBet\G.CasinoBet\bin\G.FrontMvc.dll
-D:\git\G.CasinoBet\G.CasinoBet\bin\G.FrontMvc.pdb
 D:\git\G.CasinoBet\G.CasinoBet\bin\Antlr3.Runtime.dll
 D:\git\G.CasinoBet\G.CasinoBet\bin\AWSSDK.Core.dll
 D:\git\G.CasinoBet\G.CasinoBet\bin\AWSSDK.S3.dll
@@ -181,3 +176,8 @@ D:\git\G.CasinoBet\G.CasinoBet\bin\System.Web.WebPages.Deployment.xml
 D:\git\G.CasinoBet\G.CasinoBet\bin\System.Web.WebPages.Razor.xml
 D:\git\G.CasinoBet\G.CasinoBet\bin\System.Web.Optimization.xml
 D:\git\G.CasinoBet\G.CasinoBet\obj\Debug\G.CasinoBet.csproj.CopyComplete
+D:\git\G.CasinoBet\G.CasinoBet\bin\G.CasinoBet.dll.config
+D:\git\G.CasinoBet\G.CasinoBet\bin\G.CasinoBet.dll
+D:\git\G.CasinoBet\G.CasinoBet\bin\G.CasinoBet.pdb
+D:\git\G.CasinoBet\G.CasinoBet\obj\Debug\G.CasinoBet.dll
+D:\git\G.CasinoBet\G.CasinoBet\obj\Debug\G.CasinoBet.pdb

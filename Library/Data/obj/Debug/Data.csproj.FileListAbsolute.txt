@@ -76,3 +76,4 @@ D:\git\G.CasinoBet\Library\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
 D:\git\G.CasinoBet\Library\Data\obj\Debug\Data.csproj.CopyComplete
 D:\git\G.CasinoBet\Library\Data\obj\Debug\Data.dll
 D:\git\G.CasinoBet\Library\Data\obj\Debug\Data.pdb
+D:\git\G.CasinoBet\Library\Data\bin\Debug\Newtonsoft.Json.dll

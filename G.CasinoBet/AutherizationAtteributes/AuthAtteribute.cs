@@ -62,7 +62,7 @@ namespace G.CasinoBet.AutherizationAtteributes
 
                 var container = Ioc.Initialize();
                 var _cacheManager = container.GetInstance<IRedisManager>();
-                var accesstoken = string.Format(GlobalCacheKey.UserAccessToken, uu_id);
+                var accesstoken = string.Format(GlobalCacheKey.UserG2AccessToken, uu_id);
 
                 if (_cacheManager.IsExist(accesstoken, ConfigItems.RedisLocaldb))
                 {
