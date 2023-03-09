@@ -50,4 +50,3 @@ D:\git\G.CasinoBet\Library\Data\obj\Release\Data.csproj.CoreCompileInputs.cache
 D:\git\G.CasinoBet\Library\Data\obj\Release\Data.csproj.CopyComplete
 D:\git\G.CasinoBet\Library\Data\obj\Release\Data.dll
 D:\git\G.CasinoBet\Library\Data\obj\Release\Data.pdb
-D:\git\G.CasinoBet\Library\Data\bin\Release\Newtonsoft.Json.dll

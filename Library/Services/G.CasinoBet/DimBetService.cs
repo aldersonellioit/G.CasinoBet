@@ -1657,6 +1657,7 @@ namespace Services.G.CasinoBet
                         parameters3.Add(new SqlParameter() { ParameterName = "fratemul", Value = ds.Tables[0].Rows[0]["balratemul"] });
                         parameters3.Add(new SqlParameter() { ParameterName = "Spart", Value = ds.Tables[0].Rows[0]["apart"] });
                         parameters3.Add(new SqlParameter() { ParameterName = "currname", Value = ds.Tables[0].Rows[0]["ccode"] });
+                        parameters3.Add(new SqlParameter() { ParameterName = "exposeramount", Value = dscasino.Tables[0].Rows[0]["exposeramount"] });
                         dscom = _sqlClientService.Execute("group2_worli_placebetconform", ConfigItems.Conn_Casino, parameters3);
                         WriteLogAll("Placebetworli2+group2_worli_placebetconform", "Req:" + JsonConvert.SerializeObject(placebetteen) + "Res" + JsonConvert.SerializeObject(dscom));
                         if (dscom != null && dscom.Tables != null && dscom.Tables.Count > 0 && dscom.Tables[0].Rows.Count > 0 && dscom.Tables[0].Columns.Contains("id") && dscom.Tables[0].Rows[0]["id"].ToString() == "1")
@@ -1686,6 +1687,7 @@ namespace Services.G.CasinoBet
                             parameters1.Add(new SqlParameter() { ParameterName = "newUserrate", Value = dscom.Tables[0].Rows[0]["NewUserrate"] });
                             parameters1.Add(new SqlParameter() { ParameterName = "newAmount", Value = dscom.Tables[0].Rows[0]["Amount"] });
                             parameters1.Add(new SqlParameter() { ParameterName = "Gameid", Value = dscom.Tables[0].Rows[0]["Gameid"] });
+                            parameters1.Add(new SqlParameter() { ParameterName = "exposeramount", Value = dscasino.Tables[0].Rows[0]["exposeramount"] });
                             ds1 = _sqlClientService.Execute("worli_placebetconform", ConfigItems.Conn_Casinogroup, parameters1);
                             WriteLogAll("Placebetworli3+worli_placebetconform", "Req:" + JsonConvert.SerializeObject(placebetteen) + "Res" + JsonConvert.SerializeObject(ds1));
 
@@ -5048,6 +5050,7 @@ namespace Services.G.CasinoBet
                     {
                         var parameters3 = new List<SqlParameter>();
                         parameters3.Add(new SqlParameter() { ParameterName = "marketid", Value = placebetteen.mid });
+                        parameters3.Add(new SqlParameter() { ParameterName = "bhav", Value = placebetteen.bhav });
                         parameters3.Add(new SqlParameter() { ParameterName = "sectionid", Value = placebetteen.sid });
                         parameters3.Add(new SqlParameter() { ParameterName = "subsectionid", Value = placebetteen.subid });
                         parameters3.Add(new SqlParameter() { ParameterName = "bettype", Value = placebetteen.btype });
