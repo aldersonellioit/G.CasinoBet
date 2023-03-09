@@ -32,7 +32,7 @@ namespace G.CasinoBet.AutherizationAtteributes
                 var error = actionContext.ModelState.Select(modelError => new { msg = modelError.Value.Errors.FirstOrDefault().ErrorMessage }).FirstOrDefault();//.ToList();
                 //string errors = exs == null ? actionContext.ModelState.SelectMany(state => state.Value.Errors).First().ErrorMessage : exs.Message.Split(new string[] { ". " }, System.StringSplitOptions.None)[0];
 
-                actionContext.Response = actionContext.Request.CreateResponse(HttpStatusCode.BadRequest, new { status = 100, message = error.msg.ToString() });
+                actionContext.Response = actionContext.Request.CreateResponse(HttpStatusCode.BadRequest, new { status = 400, message = error.msg.ToString() });
                 return;
             }
             else
