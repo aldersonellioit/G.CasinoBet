@@ -4268,6 +4268,8 @@ namespace Services.G.CasinoBet
                                 parameters2.Add(new SqlParameter() { ParameterName = "ExposJson", Value = ds1.Tables[0].Rows[0]["masterexposer"].ToString() });
                                 parameters2.Add(new SqlParameter() { ParameterName = "marketid", Value = placebetteen.mid });
                                 parameters2.Add(new SqlParameter() { ParameterName = "gameType", Value = placebetteen.gtype });
+                                parameters2.Add(new SqlParameter() { ParameterName = "Userrate", Value = ds1.Tables[0].Rows[0]["newuserrate"] });
+                                parameters2.Add(new SqlParameter() { ParameterName = "BetAmount", Value = ds1.Tables[0].Rows[0]["conformamount"] });
                                 ds2 = _sqlClientService.Execute("Casino_ExposerUpdate", ConfigItems.Conn_AccDgroup, parameters2);
                                 WriteLogAll("Placebetvbc4+Casino_ExposerUpdate", "Req:" + JsonConvert.SerializeObject(placebetteen) + "Res" + JsonConvert.SerializeObject(ds2));
                                 try
