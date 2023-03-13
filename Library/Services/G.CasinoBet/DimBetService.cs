@@ -3247,10 +3247,12 @@ namespace Services.G.CasinoBet
                                 parameters2.Add(new SqlParameter() { ParameterName = "gameType", Value = placebetlotteryrep.gtype });
                                 ds2 = _sqlClientService.Execute("Casino_ExposerUpdate", ConfigItems.Conn_AccDgroup, parameters2);
                                 WriteLogAll("Placebetlotteryrep4+Casino_ExposerUpdate", "Req:" + JsonConvert.SerializeObject(placebetlotteryrep) + "Res" + JsonConvert.SerializeObject(ds2));
+                                Placebetfinal(placebetlotteryrep.uid);
                                 return ds2;
                             }
                             else
                             {
+                                Placebetfinal(placebetlotteryrep.uid);
                                 return ds1;
                             }
                         }
