@@ -3030,6 +3030,11 @@ namespace Services.G.CasinoBet
                         parameters3.Add(new SqlParameter() { ParameterName = "browserdetail", Value = placebet3Cardj.bdetail });
                         parameters3.Add(new SqlParameter() { ParameterName = "Usertype", Value = ds.Tables[0].Rows[0]["PartnershipType"] });
                         parameters3.Add(new SqlParameter() { ParameterName = "usercard", Value = placebet3Cardj.ucard });
+                        parameters3.Add(new SqlParameter() { ParameterName = "frate", Value = ds.Tables[0].Rows[0]["balrate"] });
+                        parameters3.Add(new SqlParameter() { ParameterName = "fratemin", Value = ds.Tables[0].Rows[0]["balratemin"] });
+                        parameters3.Add(new SqlParameter() { ParameterName = "fratemul", Value = ds.Tables[0].Rows[0]["balratemul"] });
+                        parameters3.Add(new SqlParameter() { ParameterName = "Spart", Value = ds.Tables[0].Rows[0]["apart"] });
+                        parameters3.Add(new SqlParameter() { ParameterName = "currname", Value = ds.Tables[0].Rows[0]["ccode"] });
                         dscom = _sqlClientService.Execute("group2_lottery_placebetconform", ConfigItems.Conn_Casino, parameters3);
                         WriteLogAll("Placebetlottery2+group2_lottery_placebetconform", "Req:" + JsonConvert.SerializeObject(placebet3Cardj) + "Res" + JsonConvert.SerializeObject(dscom));
                         if (dscom != null && dscom.Tables != null && dscom.Tables.Count > 0 && dscom.Tables[0].Rows.Count > 0 && dscom.Tables[0].Columns.Contains("id") && dscom.Tables[0].Rows[0]["id"].ToString() == "1")
@@ -3055,6 +3060,11 @@ namespace Services.G.CasinoBet
                             parameters1.Add(new SqlParameter() { ParameterName = "newUserrate", Value = dscom.Tables[0].Rows[0]["NewUserrate"] });
                             parameters1.Add(new SqlParameter() { ParameterName = "newAmount", Value = dscom.Tables[0].Rows[0]["Amount"] });
                             parameters1.Add(new SqlParameter() { ParameterName = "Gameid", Value = dscom.Tables[0].Rows[0]["Gameid"] });
+                            parameters1.Add(new SqlParameter() { ParameterName = "frate", Value = ds.Tables[0].Rows[0]["balrate"] });
+                            parameters1.Add(new SqlParameter() { ParameterName = "fratemin", Value = ds.Tables[0].Rows[0]["balratemin"] });
+                            parameters1.Add(new SqlParameter() { ParameterName = "fratemul", Value = ds.Tables[0].Rows[0]["balratemul"] });
+                            parameters1.Add(new SqlParameter() { ParameterName = "Spart", Value = ds.Tables[0].Rows[0]["apart"] });
+                            parameters1.Add(new SqlParameter() { ParameterName = "currname", Value = ds.Tables[0].Rows[0]["ccode"] });
                             ds1 = _sqlClientService.Execute("lottery_placebetconform", ConfigItems.Conn_Casinogroup, parameters1);
                             WriteLogAll("Placebetlottery3+lottery_placebetconform", "Req:" + JsonConvert.SerializeObject(placebet3Cardj) + "Res" + JsonConvert.SerializeObject(ds1));
 
